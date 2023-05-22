@@ -11,42 +11,46 @@
     <!-- Link awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- icon -->
-    <link rel="icon" href="assets/imagen/logo.png" type="image/x-icon">
+    <link rel="icon" href="../assets/imagen/logo.png" type="image/x-icon">
     <!-- Link interno -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/js/oscuro.js">
-    <script src="assets/js/oscuro.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/js/oscuro.js">
+    <link rel="stylesheet" href="../assets/js/java.js">
+    <link rel="stylesheet" href="../assets/js/validacion.js">
+    <script src="../assets/js/oscuro.js" defer></script>
 
 
-
-    <link rel="stylesheet" href="assets/js/geolocalizacion.js">
-    <script src="assets/js/geolocalizacion.js" defer></script>
+    <link rel="stylesheet" href="../assets/js/geolocalizacion.js">
+    <script src="../assets/js/geolocalizacion.js" defer></script>
 
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
-    <link rel="stylesheet" href="assets/js/openweather.js">
-    <script src="assets/js/openweather.js" defer></script>
+    <link rel="stylesheet" href="../assets/js/openweather.js">
+    <script src="../assets/js/openweather.js" defer></script>
 
-    <link rel="stylesheet" href="assets/js/cripto.js">
-    <script src="assets/js/cripto.js" defer></script>
+    <link rel="stylesheet" href="../assets/js/cripto.js">
+    <script src="../assets/js/cripto.js" defer></script>
+
+    <link rel="stylesheet" href="../assets/js/validacion.js">
+    <script src="../assets/js/validacion.js" defer></script>
 
 
-
-
+    
 
     <title>EXOTIC PETS</title>
-</head>
-<body>
 
+</head>
+
+<body>
 
   <header>
     <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5" data-bs-theme="dark">
           <a class="navbar-brand" href="index.html">
-            <img src="assets/imagen/logo.png" alt="Logo" width="60" height="60" class="d-inline-block  fs-1 align-text-center">
+            <img src="../assets/imagen/logo.png" alt="Logo" width="60" height="60" class="d-inline-block  fs-1 align-text-center">
             <span class="text-primary ">Exotic</span>Pets
           </a>
           <a href="index.html" class="navbar-brand d-block d-lg-none">
@@ -186,43 +190,129 @@
       </nav>
   </div>
   </header>
-  
+
+      
+<!-- Formulario -->
 
 
-<!--Informacion-->
-  
+<div class="contacto-container">
+  <section class="contact-section">
+    <div class="container">
+      <h2 class="section-heading text-primary">Contáctanos</h2>
+      <div class="card-body">
+        
+        <div class="mb-3">
+            <label for="rut" class="form-label">Rut</label>
+            <input type="text" onblur="validarFormulario()" class="form-control" id="txtRut" name="rut" placeholder="Ej. 12345678-9">
+            <small id="error_rut" class="text-danger">Debes ingresar tu rut</small>
+        </div> 
 
-  <div class="container text-center">
-    <h1 class="titulo text-primary">Informacion de mascotas</h1>
-    <hr class="line-title"> 
-  </div>
-    <div class="contenido">
-      <div class="seccion1">
-        <img class="imagen1" src="assets/imagen/rami2.jpg">
-        <p class="texto1">Los conejos necesitan espacio para moverse y jugar, por lo que es importante proporcionarles una jaula lo suficientemente grande y permitirles salir y correr en un área segura y protegida de depredadores. También necesitan atención veterinaria regular y limpieza diaria de su jaula.</p>
+
+
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" onkeyup="validarFormulario()" onblur="validarFormulario()" class="form-control" id="nombre" name="nombre"
+                placeholder="Ingrese su nombre">
+            <small id="error_nombre_min" class="text-danger">Debes ingresar tu nombre</small>
+            <small id="error_nombre_max" class="text-danger">El nombre excede el largo máximo permitido</small>
+        </div>
+        
+        <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" onkeyup="validarFormulario()" onblur="validarFormulario()" class="form-control" id="apellido" name="apellido"
+                placeholder="Ingrese su apellido">
+                <small id="error_apellido_min" class="text-danger">Debes ingresar tu apellido</small>
+                <small id="error_apellido_max" class="text-danger">El apellido excede el largo máximo permitido</small>
+        </div>
+        
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" onkeyup="validarFormulario()" onblur="validarFormulario()" class="form-control" id="email" name="email"
+                placeholder="correo@correo.com">
+            <small id="error_email" class="text-danger">Formato ingresado es incorrecto</small>
+        </div>
+        
+        <div class="mb-3">
+          <label for="Telefono" class="form-label">Telefono</label>
+          <input type="Telefono" onkeyup="validarFormulario()" onblur="validarFormulario()" class="form-control" id="Telefono" name="Telefono"
+              placeholder="Ingrese su Telefono">
+          <small id="error_Telefono_min" class="text-danger">Debes ingresar tu Telefono</small>
+          <small id="error_Telefono_max" class="text-danger">El Telefono excede el largo máximo permitido</small>
       </div>
-      <div class="seccion2">
-        <img class="imagen2" src="assets/imagen/hamster.jpg">
-        <p class="texto2"> los hamster son muy propensos a estrezarse por lo que es recomendable tenerlos en una jaula lo suficientemente amplia a parte de sus zonas rtecreativas ya sea rueda de ejercicios, tubos o juegos.</p>
-      </div>
-      <div class="seccion3">
-        <img class="imagen3" src="assets/imagen/gecko1.jpg">
-        <p class="texto3">Los geckos son mascotas populares debido a su tamaño pequeño y su aspecto único y atractivo. Son animales nocturnos y solitarios que prefieren vivir solos en su terrario. Los geckos son capaces de adherirse a las superficies verticales y pueden ser vistos subiendo por las paredes de su terrario.</p>
-      </div>
-      <div class="seccion4">
-        <img class="imagen4" src="assets/imagen/tarantula.jpg">
-        <p class="texto4">Las tarántulas son una opción de mascota exótica para aquellos que buscan algo fuera de lo común. A pesar de su reputación temida, muchas especies de tarántulas son tranquilas y fáciles de cuidar. Son animales nocturnos y solitarios que prefieren vivir solos en su terrario.</p>
-      </div>
-      <div class="seccion5">
-        <img class="imagen5" src="assets/imagen/loro.jpg">
-        <p class="texto5">Los loros son mascotas inteligentes y sociales que pueden ser fascinantes para aquellos que buscan un animal exótico como compañero. Son animales diurnos y altamente sociables que requieren mucha atención y tiempo de interacción con sus dueños para mantener su salud emocional y bienestar.</p>
-      </div>
-      <div class="seccion6">
-        <img class="imagen6" src="assets/imagen/pez.jpeg">
-        <p class="texto6">Los peces son animales acuáticos que pueden ser considerados como mascotas exóticas debido a la gran variedad de especies y colores que existen. Los peces pueden ser mantenidos en acuarios de diferentes tamaños y formas.</p>
-      </div>
+        
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <div class="input-group">
+                <input type="password" onkeyup="validarFormulario()" onblur="validarFormulario()" class="form-control" id="password" name="password">
+                <button onclick="password()" class="btn btn-secondary">
+                    <i id="mostrar_pass" class="fa-regular fa-eye"></i>
+                    <i id="ocultar_pass" class="fa-regular fa-eye-slash"></i>
+                </button>
+            </div>
+            <small id="error_password" class="text-danger">
+                <ul>
+                    <li>Entre 6 y 10 caracteres</li>
+                    <li>Debe tener al menos una mayúscula, una minúscula y un número</li>
+                    <li>No puede contener carecteres especiales</li>
+                </ul>
+            </small>
+        </div>
+        
+        <div class="mb-3">
+            <label for="carrera" class="form-label">Carrera</label>
+            <select onblur="validarFormulario()" onchange="validarFormulario()" name="carrera"  id="carrera" class="form-select">
+                <option select disabled value="null">Seleccione su carrera</option>
+                <option value="1">Analista Programador</option>
+                <option value="2">Ingeniería Informática</option>
+                <option value="3">Ingeniero en Conectividad y Redes</option>
+            </select>
+            <small id="error_carrera" class="text-danger">Debes seleccionar tu carrera</small>
+        </div>
+        
+        <div class="mb-3">
+            <label for="genero" class="form-label">Genero</label>
+            <div class="form-check">
+                <input class="form-check-input" onchange="validarFormulario()" type="radio" name="genero" id="femenino">
+                <label class="form-check-label" for="femenino">Femenino</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" onchange="validarFormulario()" type="radio" name="genero" id="masculino">
+                <label class="form-check-label" for="masculino">Masculino</label>
+            </div>
+            <small id="error_genero" class="text-danger">Debes seleccionar tu genero</small>
+        </div>
+
+        <div class="mb-3">
+            <label for="fecha_nac" class="form-label">Fecha nacimiento</label>
+            <input type="date" class="form-control" id="fecha_nac" name="fecha_nac">
+            <small id="error_nacimiento">Debes ingresar fecha de nacimiento</small>
+        </div>
+
+        <div class="form-group">
+          <label for="comentarios">Comentarios:</label>
+          <textarea class="form-control" id="comentarios" name="comentarios" onkeyup="validarComentario()" onblur="validarComentario()"></textarea>
+          <small id="error_comentario" class="text-danger">El comentario no puede exceder los 100 caracteres</small>
+        </div>
+        
+    
+
+
+        <div class="d-grid gap-2 mt-4">
+            <button class="btn btn-primary" onclick="validarFormulario()" type="button">
+                <i class="fa-regular fa-floppy-disk"></i>
+            </button>   
+        </div>
+
     </div>
-  
+</div>
+</div>
+
+
+
+
+
+
+
 
 
 
@@ -248,15 +338,8 @@
   <button  class="btn btn-primary" id="btn-location">UBICACION</button>
 </div>
 </div>
-  <script src="assets/js/reloj.js"></script>
+  <script src="../assets/js/reloj.js"></script>
 </div>
-
-
-
-
-
-
-
 
 
 
@@ -266,7 +349,7 @@
   <div class="row pt-5">
       <div class="col-lg-4 col-md-12 mb-5">
           <h1 class="mb-3 display-5 text-capitalize text-white">
-              <img src="assets/imagen/logo.png" alt="Logo" width="60" height="60" class="d-inline-block  fs-1 align-text-center">
+              <img src="../assets/imagen/logo.png" alt="Logo" width="60" height="60" class="d-inline-block  fs-1 align-text-center">
               <span class="text-primary">Exotic</span>Pets</h1>
           <p class="m-0">Aquí encontrarás todo lo que necesitas saber sobre estas fascinantes criaturas. Desde consejos de cuidado hasta información sobre su comportamiento y características únicas, nuestro sitio es tu guía completa para adentrarte en el maravilloso mundo de las mascotas exóticas. Además, no te pierdas nuestras ofertas y promociones en productos y servicios para tu amado compañero exótico. Gracias por visitarnos y esperamos que disfrutes de nuestro sitio.</p>
       </div>
@@ -325,6 +408,7 @@
 
 
 
+ 
 
 
 
@@ -333,11 +417,12 @@
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous">
-  </script>
+    </script>
 
+  <script src="../assets/js/validacion.js"></script>
 
 
     

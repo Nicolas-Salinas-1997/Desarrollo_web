@@ -11,46 +11,42 @@
     <!-- Link awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- icon -->
-    <link rel="icon" href="assets/imagen/logo.png" type="image/x-icon">
+    <link rel="icon" href="../assets/imagen/logo.png" type="image/x-icon">
     <!-- Link interno -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/js/oscuro.js">
-    <link rel="stylesheet" href="assets/js/java.js">
-    <link rel="stylesheet" href="assets/js/validacion.js">
-    <script src="assets/js/oscuro.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/js/oscuro.js">
+
+    <script src="../assets/js/oscuro.js" defer></script>
 
 
-    <link rel="stylesheet" href="assets/js/geolocalizacion.js">
-    <script src="assets/js/geolocalizacion.js" defer></script>
+
+
+    <link rel="stylesheet" href="../assets/js/geolocalizacion.js">
+    <script src="../assets/js/geolocalizacion.js" defer></script>
 
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
-    <link rel="stylesheet" href="assets/js/openweather.js">
-    <script src="assets/js/openweather.js" defer></script>
+    <link rel="stylesheet" href="../assets/js/openweather.js">
+    <script src="../assets/js/openweather.js" defer></script>
 
-    <link rel="stylesheet" href="assets/js/cripto.js">
-    <script src="assets/js/cripto.js" defer></script>
-
-    <link rel="stylesheet" href="assets/js/validacion.js">
-    <script src="assets/js/validacion.js" defer></script>
+    <link rel="stylesheet" href="../assets/js/cripto.js">
+    <script src="../assets/js/cripto.js" defer></script>
 
 
-    
 
     <title>EXOTIC PETS</title>
-
 </head>
-
 <body>
+
 
   <header>
     <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5" data-bs-theme="dark">
           <a class="navbar-brand" href="index.html">
-            <img src="assets/imagen/logo.png" alt="Logo" width="60" height="60" class="d-inline-block  fs-1 align-text-center">
+            <img src="../assets/imagen/logo.png" alt="Logo" width="60" height="60" class="d-inline-block  fs-1 align-text-center">
             <span class="text-primary ">Exotic</span>Pets
           </a>
           <a href="index.html" class="navbar-brand d-block d-lg-none">
@@ -190,127 +186,114 @@
       </nav>
   </div>
   </header>
-
-      
-<!-- Formulario -->
-
-
-<div class="contacto-container">
-  <section class="contact-section">
-    <div class="container">
-      <h2 class="section-heading text-primary">Contáctanos</h2>
-      <div class="card-body">
-        
-        <div class="mb-3">
-            <label for="rut" class="form-label">Rut</label>
-            <input type="text" onblur="validarFormulario()" class="form-control" id="txtRut" name="rut" placeholder="Ej. 12345678-9">
-            <small id="error_rut" class="text-danger">Debes ingresar tu rut</small>
-        </div> 
+  
 
 
 
-        <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" onkeyup="validarFormulario()" onblur="validarFormulario()" class="form-control" id="nombre" name="nombre"
-                placeholder="Ingrese su nombre">
-            <small id="error_nombre_min" class="text-danger">Debes ingresar tu nombre</small>
-            <small id="error_nombre_max" class="text-danger">El nombre excede el largo máximo permitido</small>
+
+<!-- problema en el card title  h5 y p no quedan igualados  -->
+
+<!--Servicios-->
+ <div class="container-fluid text-center">
+  <h1 class="titulo text-primary">Servicios</h1>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100 ">
+        <div class="card  card-deck" id="card1">
+          <img src="../assets/imagen/conejo_servicio.jpg" class="card-img-top " alt="veterinario con un conejo">
+          <div class="card-body22">
+            <h5 class="card-title ">Servicio de veterinario</h5>
+            <p class="card-text ">Nuestro servicio veterinario es una opción confiable y segura para el cuidado de tus mascotas exóticas. En nuestra tienda online, ofrecemos una amplia variedad de servicios, desde exámenes de salud hasta cirugías y tratamientos especializados.</p>
+          </div>
+          <div class="card-overlay  text-dark ">
+            <h5 class="card-title">Servicio de veterinario</h5>
+            <p class="card-text">En nuestro veterinario exótico ofrecemos atención especializada para todo tipo de mascotas no convencionales, desde reptiles hasta aves exóticas. Nuestro equipo de veterinarios altamente capacitados cuenta con años de experiencia y está equipado con las herramientas más avanzadas para brindar la mejor atención médica posible a sus mascotas.</p>
+          </div>
         </div>
-        
-        <div class="mb-3">
-            <label for="apellido" class="form-label">Apellido</label>
-            <input type="text" onkeyup="validarFormulario()" onblur="validarFormulario()" class="form-control" id="apellido" name="apellido"
-                placeholder="Ingrese su apellido">
-                <small id="error_apellido_min" class="text-danger">Debes ingresar tu apellido</small>
-                <small id="error_apellido_max" class="text-danger">El apellido excede el largo máximo permitido</small>
-        </div>
-        
-        <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" onkeyup="validarFormulario()" onblur="validarFormulario()" class="form-control" id="email" name="email"
-                placeholder="correo@correo.com">
-            <small id="error_email" class="text-danger">Formato ingresado es incorrecto</small>
-        </div>
-        
-        <div class="mb-3">
-          <label for="Telefono" class="form-label">Telefono</label>
-          <input type="Telefono" onkeyup="validarFormulario()" onblur="validarFormulario()" class="form-control" id="Telefono" name="Telefono"
-              placeholder="Ingrese su Telefono">
-          <small id="error_Telefono_min" class="text-danger">Debes ingresar tu Telefono</small>
-          <small id="error_Telefono_max" class="text-danger">El Telefono excede el largo máximo permitido</small>
       </div>
-        
-        <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
-            <div class="input-group">
-                <input type="password" onkeyup="validarFormulario()" onblur="validarFormulario()" class="form-control" id="password" name="password">
-                <button onclick="password()" class="btn btn-secondary">
-                    <i id="mostrar_pass" class="fa-regular fa-eye"></i>
-                    <i id="ocultar_pass" class="fa-regular fa-eye-slash"></i>
-                </button>
-            </div>
-            <small id="error_password" class="text-danger">
-                <ul>
-                    <li>Entre 6 y 10 caracteres</li>
-                    <li>Debe tener al menos una mayúscula, una minúscula y un número</li>
-                    <li>No puede contener carecteres especiales</li>
-                </ul>
-            </small>
-        </div>
-        
-        <div class="mb-3">
-            <label for="carrera" class="form-label">Carrera</label>
-            <select onblur="validarFormulario()" onchange="validarFormulario()" name="carrera"  id="carrera" class="form-select">
-                <option select disabled value="null">Seleccione su carrera</option>
-                <option value="1">Analista Programador</option>
-                <option value="2">Ingeniería Informática</option>
-                <option value="3">Ingeniero en Conectividad y Redes</option>
-            </select>
-            <small id="error_carrera" class="text-danger">Debes seleccionar tu carrera</small>
-        </div>
-        
-        <div class="mb-3">
-            <label for="genero" class="form-label">Genero</label>
-            <div class="form-check">
-                <input class="form-check-input" onchange="validarFormulario()" type="radio" name="genero" id="femenino">
-                <label class="form-check-label" for="femenino">Femenino</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" onchange="validarFormulario()" type="radio" name="genero" id="masculino">
-                <label class="form-check-label" for="masculino">Masculino</label>
-            </div>
-            <small id="error_genero" class="text-danger">Debes seleccionar tu genero</small>
-        </div>
-
-        <div class="mb-3">
-            <label for="fecha_nac" class="form-label">Fecha nacimiento</label>
-            <input type="date" class="form-control" id="fecha_nac" name="fecha_nac">
-            <small id="error_nacimiento">Debes ingresar fecha de nacimiento</small>
-        </div>
-
-        <div class="form-group">
-          <label for="comentarios">Comentarios:</label>
-          <textarea class="form-control" id="comentarios" name="comentarios" onkeyup="validarComentario()" onblur="validarComentario()"></textarea>
-          <small id="error_comentario" class="text-danger">El comentario no puede exceder los 100 caracteres</small>
-        </div>
-        
-    
-
-
-        <div class="d-grid gap-2 mt-4">
-            <button class="btn btn-primary" onclick="validarFormulario()" type="button">
-                <i class="fa-regular fa-floppy-disk"></i>
-            </button>   
-        </div>
-
     </div>
+    <div class="col">
+      <div class="card ">
+        <div class="card card-deck " id="card2">
+          <img src="../assets/imagen/comida.jpg" class="card-img-top" alt="comida">
+          <div class="card-body22">
+            <h5 class="card-title">Alimentos para mascotas</h5>
+            <p class="card-text">En nuestra tienda online, encontrarás una selección de alimentos de alta calidad para mascotas exóticas. Ofrecemos opciones nutritivas y deliciosas para satisfacer las necesidades alimenticias de tu mascota.</p>
+          </div>
+          <div class="card-overlay text-dark">
+            <h5 class="card-title">Alimentos</h5>
+            <p class="card-text">En nuestra tienda online ofrecemos una amplia variedad de alimentos para mascotas exóticas, desde comidas especializadas hasta snacks y golosinas. Todos nuestros productos son de alta calidad y están diseñados para satisfacer las necesidades nutricionales específicas de cada animal. Además, contamos con el asesoramiento de nuestro equipo de expertos en nutrición animal para ayudarte a elegir los alimentos adecuados para tu mascota exótica.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 ">
+        <div class="card card-deck " id="card3">
+          <img src="../assets/imagen/accesorio.jpg" class="card-img-top" alt="Accesorios">
+          <div class="card-body22 ">
+            <h5 class="card-title">Accesorios</h5>
+            <p class="card-text">En nuestra tienda online ofrecemos una amplia variedad de accesorios para mascotas exóticas. Desde jaulas y terrarios hasta juguetes y alimentos especiales, tenemos todo lo que necesitas para cuidar a tu mascota de manera adecuada.</p>
+          </div>
+          <div class="card-overlay text-dark">
+            <h5 class="card-title ">Accesorios</h5>
+            <p class="card-text  ">Nuestra tienda online ofrece una gran variedad de accesorios para mascotas exóticas, desde jaulas y terrarios hasta juguetes y alimentos especiales. Contamos con productos de alta calidad para ayudarte a cuidar a tu mascota de manera adecuada y garantizar su bienestar. Además, nuestro equipo de expertos en cuidado de animales exóticos está siempre dispuesto a ayudarte con cualquier duda o consulta que puedas tener. Con nuestros productos y servicios, puedes estar seguro de que tu mascota exótica recibirá los cuidados que necesita para estar feliz y saludable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card card-deck" id="card4">
+          <img src="../assets/imagen/asesoramiento.jpg" class="card-img-top" alt="Asesoramiento y educación">
+          <div class="card-body22">
+            <h5 class="card-title">Asesoramiento y educación</h5>
+            <p class="card-text">Aprovecha nuestro asesoramiento y educación para cuidar adecuadamente de tu mascota exótica. Expertos en alimentación y bienestar animal a tu disposición.</p>
+          </div>
+          <div class="card-overlay text-dark">
+            <h5 class="card-title">Asesoramiento y educación</h5>
+            <p class="card-text">Ofrecemos asesoramiento y educación sobre el fascinante mundo de las mascotas exóticas. Contamos con expertos que brindan información detallada sobre el cuidado, alimentación y comportamiento de animales exóticos como reptiles, aves, mamíferos y arácnidos. Además, te proporcionamos las mejores recomendaciones para que disfrutes de la experiencia de tener una mascota exótica de manera responsable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card card-deck" id="card5">
+          <img src="../assets/imagen/adopcion.jpg" class="card-img-top" alt="Adopción y rescate:">
+          <div class="card-body22">
+            <h5 class="card-title">Adopción y rescate de mascotas</h5>
+            <p class="card-text">
+              En nuestra página web, encontrarás información y recursos para la adopción y rescate de mascotas exóticas. Trabajamos con organizaciones dedicadas a la protección y bienestar animal para ayudar a encontrar hogares amorosos para animales que necesitan ser adoptados o rescatados.</p>
+          </div>
+          <div class="card-overlay text-dark">
+            <h5 class="card-title">Adopción y rescate</h5>
+            <p class="card-text">En nuestro servicio de Adopción y Rescate, ofrecemos la oportunidad de adoptar mascotas exóticas que necesitan un hogar. Al adoptar, no solo estás dando un hogar amoroso a un animal necesitado, sino que también estás ayudando a reducir el número de mascotas abandonadas y sin hogar. Además de la adopción, también nos enfocamos en el rescate y la rehabilitación de mascotas exóticas en situación de abandono o maltrato. Todos los animales rescatados reciben atención médica, alimentación y el amor que merecen antes de ser puestos en adopción.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card card-deck" id="card5">
+          <img src="../assets/imagen/Eventos.jpg" class="card-img-top" alt="Adopción y rescate:">
+          <div class="card-body22">
+            <h5 class="card-title">Eventos y talleres</h5>
+            <p class="card-text">
+              Nuestros eventos y talleres están diseñados para brindar a los amantes de las mascotas exóticas una experiencia educativa y enriquecedora. Mediante charlas interactivas y actividades prácticas, nuestros expertos en cuidado de mascotas exóticas comparten valiosos conocimientos y consejos sobre alimentación, salud, comportamiento y manejo adecuado.</p>
+          </div>
+          <div class="card-overlay text-dark">
+            <h5 class="card-title">Eventos y talleres</h5>
+            <p class="card-text">Nuestros eventos y talleres son oportunidades emocionantes para sumergirte en el fascinante mundo de las mascotas exóticas. Nuestros expertos en cuidado de mascotas exóticas te guiarán a través de charlas informativas y prácticas interactivas, donde aprenderás sobre las necesidades específicas de cada especie, técnicas de enriquecimiento ambiental, entrenamiento y mucho más. Ya seas un propietario experimentado o simplemente estés interesado en adquirir conocimientos sobre estas fascinantes criaturas, nuestros eventos y talleres te brindarán información valiosa, consejos prácticos y la oportunidad de conectar con otros entusiastas de las mascotas exóticas. Únete a nosotros y expande tu comprensión sobre el cuidado responsable y el bienestar de estas increíbles mascotas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
-</div>
-
-
-
-
-
 
 
 
@@ -338,8 +321,9 @@
   <button  class="btn btn-primary" id="btn-location">UBICACION</button>
 </div>
 </div>
-  <script src="assets/js/reloj.js"></script>
+  <script src="../assets/js/reloj.js"></script>
 </div>
+
 
 
 
@@ -349,7 +333,7 @@
   <div class="row pt-5">
       <div class="col-lg-4 col-md-12 mb-5">
           <h1 class="mb-3 display-5 text-capitalize text-white">
-              <img src="assets/imagen/logo.png" alt="Logo" width="60" height="60" class="d-inline-block  fs-1 align-text-center">
+              <img src="../assets/imagen/logo.png" alt="Logo" width="60" height="60" class="d-inline-block  fs-1 align-text-center">
               <span class="text-primary">Exotic</span>Pets</h1>
           <p class="m-0">Aquí encontrarás todo lo que necesitas saber sobre estas fascinantes criaturas. Desde consejos de cuidado hasta información sobre su comportamiento y características únicas, nuestro sitio es tu guía completa para adentrarte en el maravilloso mundo de las mascotas exóticas. Además, no te pierdas nuestras ofertas y promociones en productos y servicios para tu amado compañero exótico. Gracias por visitarnos y esperamos que disfrutes de nuestro sitio.</p>
       </div>
@@ -408,21 +392,14 @@
 
 
 
- 
-
-
-
-
-
-
-
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous">
     </script>
 
-  <script src="assets/js/validacion.js"></script>
+
+
 
 
     
