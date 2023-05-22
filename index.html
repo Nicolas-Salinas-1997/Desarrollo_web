@@ -1,10 +1,385 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My GitHub Pages Site</title>
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my GitHub Pages site!</p>
-  </body>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- links BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Link awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- icon -->
+    <link rel="icon" href="assets/imagen/logo.png" type="image/x-icon">
+    <!-- Link interno -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/js/oscuro.js">
+    <link rel="stylesheet" href="assets/js/java.js">
+    <script src="assets/js/oscuro.js" defer></script>
+
+    <link rel="stylesheet" href="assets/js/geolocalizacion.js">
+    <script src="assets/js/geolocalizacion.js" defer></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <link rel="stylesheet" href="assets/js/openweather.js">
+    <script src="assets/js/openweather.js" defer></script>
+
+
+    <link rel="stylesheet" href="assets/js/cripto.js">
+    <script src="assets/js/cripto.js" defer></script>
+
+
+
+
+    <title>EXOTIC PETS</title>
+
+</head>
+
+<body>
+<header>
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5" data-bs-theme="dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/imagen/logo.png" alt="Logo" width="60" height="60" class="d-inline-block  fs-1 align-text-center">
+          <span class="text-primary ">Exotic</span>Pets
+        </a>
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+
+        <div class="navbar-collapse justify-content-between px-3" id="navbarCollapse">
+            <div class="navbar-nav mr-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="paginas/servicios.html" class="nav-item nav-link">servicios</a>
+                <a href="paginas/informacion.html" class="nav-item nav-link">Informacion</a>
+                <a href="paginas/nosotros.html" class="nav-item nav-link">Nosotros</a>
+                <a href="paginas/contact.html" class="nav-item nav-link">Contacto</a>
+            </div>
+            <!--luz -->
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+              <symbol id="circle-half" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+              </symbol>
+        
+              <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+                <path
+                  d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+                />
+                <path
+                  d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+                />
+              </symbol>
+        
+              <symbol id="sun-fill" viewBox="0 0 16 16">
+                <path
+                  d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                />
+              </symbol>
+            </svg>
+              <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  </ul>
+                  <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item dropdown w-25" data-bs-theme="light">
+                      <button
+                        class="btn btn-link nav-link py-1 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+                        id="bd-theme"
+                        type="button"
+                        aria-expanded="false"
+                        data-bs-toggle="dropdown"
+                        data-bs-display="static"
+                      >
+                        <svg
+                          class="bi my-1 theme-icon-active"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                        >
+                          <use href="#circle-half"></use>
+                        </svg>
+                        <span class="d-lg-none ms-2">Toggle theme</span>
+                      </button>
+        
+                      <ul
+                        class="dropdown-menu dropdown-menu-end px-1"
+                        aria-labelledby="bd-theme"
+                      >
+                        <li>
+                          <button
+                            type="button"
+                            class="dropdown-item d-flex align-items-center"
+                            data-bs-theme-value="light"
+                          >
+                            <svg
+                              class="bi me-2 opacity-50 theme-icon"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                            >
+                              <use href="#sun-fill"></use>
+                            </svg>
+                            Light
+                          </button>
+                        </li>
+                        <li>
+                          <button
+                            type="button"
+                            class="dropdown-item d-flex align-items-center"
+                            data-bs-theme-value="dark"
+                          >
+                            <svg
+                              class="bi me-2 opacity-50 theme-icon"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                            >
+                              <use href="#moon-stars-fill"></use>
+                            </svg>
+                            Dark
+                          </button>
+                        </li>
+                        <li>
+                          <button
+                            type="button"
+                            class="dropdown-item d-flex align-items-center active"
+                            data-bs-theme-value="auto"
+                          >
+                            <svg
+                              class="bi me-2 opacity-50 theme-icon"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                            >
+                              <use href="#circle-half"></use>
+                            </svg>
+                            Auto
+                          </button>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+    </nav>
+</div>
+</header>
+
+
+<!-- titulo pagina -->
+<div class="container-fluid py-0">
+    <div class="container text-center">
+        <h1>
+            <span class="text-primary ">Exotic</span>Pets
+        </h1>
+            <hr class="line-title"> 
+    </div>
+    <div class="container-fluid text align-text-center">
+        <h4> Una mascota exótica es un animal no tradicional o inusual que se mantiene como mascota en lugar de animales comúnmente domesticados, como perros y gatos. Las mascotas exóticas pueden incluir aves, reptiles, anfibios, mamíferos y arácnidos, entre otros. A menudo, estas mascotas exóticas provienen de regiones lejanas o de hábitats naturales diferentes a los de la región donde se mantienen como mascotas.
+
+          Las mascotas exóticas pueden ser llamativas debido a sus características físicas únicas o su comportamiento interesante. Algunos ejemplos de mascotas exóticas llamativas incluyen el loro arcoíris, el lagarto barbudo, el erizo africano pigmeo, el mono tití y la serpiente de maíz, entre otros. Estas mascotas exóticas a menudo tienen un atractivo visual debido a sus colores brillantes, patrones únicos o tamaño inusual.
+          
+          Sin embargo, es importante tener en cuenta que las mascotas exóticas requieren un cuidado y atención especiales debido a sus necesidades únicas, y pueden ser más costosas de mantener que las mascotas comúnmente domesticadas. Además, algunos animales exóticos pueden ser ilegales o estar regulados por leyes locales o nacionales, por lo que es importante investigar antes de adquirir una mascota exótica.     
+        </h4>
+    </div>
+</div>
+<hr>
+
+
+<!-- carrusel -->
+<div class="container">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/imagen/gecko2.jpg" class="d-block w-100" alt="imagen de un gecko">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/imagen/loro.jpg" class="d-block w-100" alt="imagen de un loro">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/imagen/tarantula.jpg" class="d-block w-100" alt="Imagen de una tarantula">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/imagen/conejo 2.jpg" class="d-block w-100" alt="Imagen de un conejo">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/imagen/eriso2.jpg" class="d-block w-100" alt="Imagen de un eriso">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+  <hr>
+
+
+<!-- card -->
+<div class="container-fluid text-center text-primary">
+  <h1>Cards
+  </h1>
+  <div class="card-grid ">
+    <div class="card">
+      <img src="assets/imagen/conejo_servicio.jpg" class="d-block w-100"  alt="Imagen 1">
+      <div class="card-body">
+        <h5 class="card-title">Servicios</h5>
+        <p class="card-text">Ofrecemos servicios especializados para mascotas exóticas. Nos encargamos de proporcionar cuidado y atención de alta calidad para animales únicos</p>
+        <a href="servicios.html" class="btn btn-primary">Servicios</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/imagen/gecko1.2.jpg" class="d-block w-100" alt="Imagen 2">
+      <div class="card-body">
+        <h5 class="card-title">Informacion</h5>
+        <p class="card-text">Encontrarás información detallada sobre algunas de las mascotas exóticas más populares.De la alimentación hasta el comportamiento  </p>
+        <a href="informacion.html" class="btn btn-primary ">Informacion</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/imagen/logo2.png" class="d-block w-100" alt="Imagen 3">
+      <div class="card-body">
+        <h5 class="card-title">Nosotros</h5>
+        <p class="card-text">Nosotros nos dedicamos a proporcionar servicios relacionados con el cuidado y la exhibición de animales exóticos</p>
+        <a href="nosotros.html" class="btn btn-primary   ">Nosotros</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="assets/imagen/contactenos.webp" class="d-block w-100" alt="Imagen 4">
+      <div class="card-body">
+        <h5 class="card-title">Contacto</h5>
+        <p class="card-text">Contactenos a traves de nuestras redes,para que sepas cada vez que publicaremos algo en nuestro sitio web o mandar una consulta</p>
+        <a href="contact.html" class="btn btn-primary ">Contactenos</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- hora-->
+  <div class="fixed-menu">
+    <div class="menu-icon">
+      <i class="fas fa-clock"></i>
+    </div>
+    <div class="menu-content text--colorme">
+    <h2>Hora y dia local</h2>
+      <div class="container-clock">
+        <h1 id="time">00:00:00 </h1>
+        <p id="date">date</p>
+        <h1>Clima en santiago</h1>
+  <div> 
+    <div id="info-clima"></div>
+    <div id="img-clima"></div>
+  </div>
+  </div>
+    <button  class="btn btn-primary" id="btn-location">UBICACION</button>
+  </div>
+  </div>
+    <script src="assets/js/reloj.js"></script>
+  </div>
+ 
+
+
+
+    
+
+<!-- Footer -->
+    <div class="container-fluid bg-dark text-white mt-5 py-1 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-4 col-md-12 mb-5">
+                <h1 class="mb-3 display-5 text-capitalize text-white">
+                    <img src="assets/imagen/logo.png" alt="Logo" width="60" height="60" class="d-inline-block  fs-1 align-text-center">
+                    <span class="text-primary">Exotic</span>Pets</h1>
+                <p class="m-0">Aquí encontrarás todo lo que necesitas saber sobre estas fascinantes criaturas. Desde consejos de cuidado hasta información sobre su comportamiento y características únicas, nuestro sitio es tu guía completa para adentrarte en el maravilloso mundo de las mascotas exóticas. Además, no te pierdas nuestras ofertas y promociones en productos y servicios para tu amado compañero exótico. Gracias por visitarnos y esperamos que disfrutes de nuestro sitio.</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-primary mb-4">Contactenos</h5>
+                        <div class="d-flex justify-content-start mt-4">
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="https://es-es.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-primary mb-4">Mapa de sitio</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-white mb-2" href="paginas/servicios.html"><i class="fa fa-angle-right mr-2"></i>Servicios</a>
+                            <a class="text-white mb-2" href="paginas/informacion.html"><i class="fa fa-angle-right mr-2"></i>Informacion</a>
+                            <a class="text-white mb-2" href="paginas/nosotros.html"><i class="fa fa-angle-right mr-2"></i>Nosotros</a>
+                            <a class="text-white" href="paginas/contact.html"><i class="fa fa-angle-right mr-2"></i>Contaco</a>
+                        </div>
+                    </div>
+                   <div class="col-md-4 mb-5">
+                      <h2 class="text-primary">Cotizador de Criptomonedas</h2>
+                      <div class="container">
+                        <div class="image-side"></div>
+                        <div class="form-side">
+                          <form action="" id="form-search">
+                            <select id="moneda" name="moneda">
+                              <option value="">Elige tu moneda</option>
+                              <option value="USD">Dólar Estadounidense</option>
+                              <option value="CLP">Peso Chileno</option>
+                              <option value="GBP">Libras</option>
+                              <option value="EUR">Euros</option>
+                            </select>
+
+                            <select id="criptomonedas" name="criptomoneda">
+                              <option value="">Elige tu criptomoneda</option>
+                            </select>
+
+                            <input class="" type="submit" value="Cotizar" />
+                            <div class="container-answer"></div>
+                          </form>
+                        </div>
+                      </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+
+
+
+</body>
 </html>
